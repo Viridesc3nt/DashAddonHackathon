@@ -105,7 +105,7 @@ public final class Dash extends ChiAbility implements AddonAbility {
     @Override
     public void load() {
         listener = new DashListener();
-        perm = new Permission("bending.ability.Landslide");
+        perm = new Permission("bending.ability.Dash");
         ProjectKorra.plugin.getServer().getPluginManager().addPermission(perm);
         ProjectKorra.plugin.getServer().getPluginManager().registerEvents(listener, ProjectKorra.plugin);
         ConfigManager.defaultConfig.get().addDefault(path+"COOLDOWN", 3000);
